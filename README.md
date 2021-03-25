@@ -1,0 +1,26 @@
+# itunes audio player
+
+
+## Supported Devices
+
+The code has been tested on:
+1. Google Pixel 2 (Android)
+2. IOS 12 Pro max simulator
+
+## Supported Features
+1. User can search songs by artist.
+2. If results found, it will populate song list.
+3. On click of song , audio player is activated. Audio player which persists throughout the lifetime
+4. On click of song, song list indicates which song is being played
+4. Audio player allows you to pause and play the song
+5. New search doesnt not affect the state of the audio player
+
+
+## Requirements to build the app
+The application is dependent on a few external libraries .
+1. `video_player` and `http` and flutter native libraries required for video playing capability and http requests respectively
+2. `provider` and `get_it` are 3rd party libraries which are used for code architeure and to use the [provider pattern](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple)
+3. `network_image_mock` is used as dev dependency to mock network image in testing scripts
+
+## Instructions to build and deploy the app.
+
