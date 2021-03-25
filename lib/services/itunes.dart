@@ -10,6 +10,10 @@ class ITunes extends ChangeNotifier{
   bool tracksNotFound = false;
   Song currentTrack;
 
+  /*
+  *  Fetches song from itunes
+  *  notifies : 'SongListWidget' and 'AudioPlayer'
+  **/
   fetchSongs(String str) async{
     String url = "https://itunes.apple.com/search?term=$str&media=music&entity=song&attribute=artistTerm";
     final response = await Resource.get(url);
@@ -22,6 +26,7 @@ class ITunes extends ChangeNotifier{
     SL<PlayerController>().notifyPlayer();
   }
 
+  // Fetches the next song from list. Prefetched by the AudioPlayer widget
   Song fetchNext(){
     int currentIndex = songList.indexOf(currentTrack);
 
@@ -30,6 +35,7 @@ class ITunes extends ChangeNotifier{
     return songList[currentIndex+1];
   }
 
+  // Fetches the previous song from list. Prefetched by the AudioPlayer widget
   Song fetchPrev(){
     int currentIndex = songList.indexOf(currentTrack);
     if(currentIndex==-1 || currentIndex==0) return null;

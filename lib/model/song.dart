@@ -20,7 +20,10 @@ class Song extends ChangeNotifier{
         collectionName = json['collectionName'];
 
 
-  // Play the song and notify all the listeners
+  /*
+  * Play the song and notify all the listeners
+  * notifies: SongTileWidget
+  * */
   play(){
     final playerController = SL<PlayerController>();
     final itunes = SL<ITunes>();

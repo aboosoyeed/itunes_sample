@@ -6,6 +6,10 @@ class PlayerController extends ChangeNotifier{
 
   PlayerController();
 
+  /*
+  * Sets track for the audio player.
+  * notifies: HomePage, AudioPlayer
+  * */
   setTrack(trackUrl) async{
 
     controller = VideoPlayerController.network(trackUrl);
@@ -20,11 +24,19 @@ class PlayerController extends ChangeNotifier{
     });
   }
 
+  /*
+  * Pauses track for the audio player.
+  * notifies: AudioPlayer
+  * */
   pause(){
     controller.pause();
     notifyListeners();
   }
 
+  /*
+  * Plays track for the audio player.
+  * notifies: AudioPlayer
+  * */
   play(){
 
     if((controller.value.duration==controller.value.position)){
