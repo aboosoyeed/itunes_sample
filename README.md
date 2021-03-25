@@ -12,8 +12,9 @@ The code has been tested on:
 2. If results found, it will populate song list.
 3. On click of song , audio player is activated. Audio player which persists throughout the lifetime
 4. On click of song, song list indicates which song is being played
-4. Audio player allows you to pause and play the song
-5. New search doesnt not affect the state of the audio player
+4. Audio player allows you to pause and play the song via a toggle button
+5. Audio player allows you to go go back and forward the list via a previous and forward button
+6. New search doesn't not affect the persistence of the audio player and it continues playing the existing song. However previous and forward buttons are disabled until a new song is selected from the list.
 
 
 ## Requirements to build the app
@@ -30,4 +31,6 @@ Steps to build and deploy
 2. `cd itunes_sample`
 3. `flutter pub get`
 4. `flutter run`
+5. To run test `flutter  test --machine test/widget_test.dart`
    This above command should ask you to select a device. Make sure you have a proper connected device or a simulator running. This can be tested by `flutter doctor`   
+
