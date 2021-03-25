@@ -1,5 +1,5 @@
 # itunes audio player
-
+![screenshot](https://i.imgur.com/X0f5HQf.png | width=100)
 
 ## Supported Devices
 
@@ -26,11 +26,11 @@ The application is dependent on a few external libraries .
 ## Instructions to build and deploy the app.
  `video_player` related settings specific to android and ios have already been done. A reference could be found [here](https://pub.dev/packages/video_player#installation)
 Steps to build and deploy
-1. Ensure flutter 2.0+ installed 
+1. Ensure flutter 2.0+ installed
 2. `git clone https://github.com/aboosoyeed/itunes_sample`
 2. `cd itunes_sample`
 3. `flutter pub get`
 4. `flutter run`
 5. To run test `flutter  test --machine test/widget_test.dart`
-   This above command should ask you to select a device. Make sure you have a proper connected device or a simulator running. This can be tested by `flutter doctor`   
+   This above command should ask you to select a device. Make sure you have a proper connected device or a simulator running. This can be tested by `flutter doctor`
 
