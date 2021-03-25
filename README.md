@@ -23,4 +23,11 @@ The application is dependent on a few external libraries .
 3. `network_image_mock` is used as dev dependency to mock network image in testing scripts
 
 ## Instructions to build and deploy the app.
-
+ `video_player` related settings specific to android and ios have already been done. A reference could be found [here](https://pub.dev/packages/video_player#installation)
+Steps to build and deploy
+1. Ensure flutter 2.0+ installed 
+2. `git clone https://github.com/aboosoyeed/itunes_sample`
+2. `cd itunes_sample`
+3. `flutter pub get`
+4. `flutter run`
+   This above command should ask you to select a device. Make sure you have a proper connected device or a simulator running. This can be tested by `flutter doctor`   
