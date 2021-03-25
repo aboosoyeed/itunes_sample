@@ -1,5 +1,5 @@
 # itunes audio player
-![screenshot](https://i.imgur.com/X0f5HQf.png | width=100)
+![screenshot](https://i.imgur.com/X0f5HQf.png)
 
 ## Supported Devices
 
