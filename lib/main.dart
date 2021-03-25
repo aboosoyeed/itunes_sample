@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:itunes/screens/homepage/main.dart';
 import 'package:itunes/services/serviceLocator.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   setUpServiceLocator();
   runApp(MyApp());
 }
