@@ -15,7 +15,7 @@ The code has been tested on:
 4. Audio player allows you to pause and play the song via a toggle button
 5. Audio player allows you to go go back and forward the list via a previous and forward button
 6. New search doesn't not affect the persistence of the audio player and it continues playing the existing song. However previous and forward buttons are disabled until a new song is selected from the list.
-
+7. Always on portrait mode.
 
 ## Requirements to build the app
 The application is dependent on a few external libraries .
