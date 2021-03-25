@@ -34,4 +34,8 @@ class PlayerController extends ChangeNotifier{
     notifyListeners();
   }
 
+  notifyPlayer() {
+    notifyListeners();
+  }
+
 }
