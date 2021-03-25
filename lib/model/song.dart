@@ -5,12 +5,12 @@ import 'package:itunes/services/playerController.dart';
 import 'package:itunes/services/serviceLocator.dart';
 
 class Song extends ChangeNotifier{
-  String trackUrl;//previewUrl
-  String artworkUrl;//artworkUrl60
-  String trackName;
-  String artistName;
-  String collectionName;
-  bool isPlaying=false;
+
+  final String trackUrl;
+  final String artworkUrl;
+  final String trackName;
+  final String artistName;
+  final String collectionName;
 
   Song(Map json):
         trackUrl = json['previewUrl'],
@@ -20,6 +20,7 @@ class Song extends ChangeNotifier{
         collectionName = json['collectionName'];
 
 
+  // Play the song and notify all the listeners
   play(){
     final playerController = SL<PlayerController>();
     final itunes = SL<ITunes>();

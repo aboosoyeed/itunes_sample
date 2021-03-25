@@ -12,7 +12,7 @@ import 'package:itunes/main.dart';
 import 'package:itunes/model/song.dart';
 import 'package:itunes/screens/homepage/artistSearchBox.dart';
 import 'package:itunes/screens/homepage/songTile.dart';
-import 'package:itunes/screens/player/main.dart';
+import 'package:itunes/screens/homepage/player.dart';
 import 'package:itunes/services/itunes.dart';
 import 'package:itunes/services/serviceLocator.dart';
 import 'package:network_image_mock/network_image_mock.dart';

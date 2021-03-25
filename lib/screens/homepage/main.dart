@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:itunes/screens/homepage/artistSearchBox.dart';
 import 'package:itunes/screens/homepage/songList.dart';
-import 'package:itunes/screens/player/main.dart';
+import 'package:itunes/screens/homepage/player.dart';
 import 'package:itunes/services/playerController.dart';
 import 'package:itunes/services/serviceLocator.dart';
 import 'package:provider/provider.dart';
